@@ -93,8 +93,6 @@
         <option value="4">Very experienced</option>
     </select>
 
-    <label>Number of Household Members</label>
-
     <label>Type of Dwelling</label>
     <select name="dwelling">
         <option value="0">Apartment</option>
