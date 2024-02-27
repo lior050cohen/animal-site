@@ -3,12 +3,6 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 
-/// <summary>
-/// Description: Sql helper methods
-/// Class Name: SQLHelper
-/// Author: Tzali Gershgoren
-/// Date: 19/11/2015
-/// </summary>
 public class SQLHelper
 {
     #region Public Static Memebrs
@@ -35,10 +29,10 @@ public class SQLHelper
             {
                 try
                 {
-                    //open connection with the DB - τϊιηϊ δχιωεψ μαριρ δπϊεπιν 
+                    //open connection with the DB - Γ΄ΓΊΓ©Γ§ΓΊ Γ€Γ·Γ©ΓΉΓ₯ΓΈ Γ¬Γ‘Γ±Γ©Γ± Γ€Γ°ΓΊΓ₯Γ°Γ©Γ­ 
                     conn.Open();
                     comm.CommandTimeout = 0;
-                    ///execute the query -  αιφες ωΰμϊΰ
+                    ///execute the query -  Γ‘Γ©ΓΆΓ₯Γ² ΓΉΓ Γ¬ΓΊΓ 
                     SqlDataReader reader = comm.ExecuteReader();
                     //load the data table
                     table.Load(reader);
@@ -50,7 +44,7 @@ public class SQLHelper
                 }
                 finally
                 {
-                    //close connection -  ρβιψϊ δχιωεψ μαριρ δπϊεπιν
+                    //close connection -  Γ±Γ’Γ©ΓΈΓΊ Γ€Γ·Γ©ΓΉΓ₯ΓΈ Γ¬Γ‘Γ±Γ©Γ± Γ€Γ°ΓΊΓ₯Γ°Γ©Γ­
                     conn.Close();
                 }
             }
@@ -74,7 +68,7 @@ public class SQLHelper
             {
                 try
                 {
-                    //open connection with the DB - τϊιηϊ δχιωεψ μαριρ δπϊεπιν 
+                    //open connection with the DB - Γ΄ΓΊΓ©Γ§ΓΊ Γ€Γ·Γ©ΓΉΓ₯ΓΈ Γ¬Γ‘Γ±Γ©Γ± Γ€Γ°ΓΊΓ₯Γ°Γ©Γ­ 
                     conn.Open();
                     //execute query
                     rows = comm.ExecuteNonQuery();
@@ -85,7 +79,7 @@ public class SQLHelper
                 }
                 finally
                 {
-                    //close connection -  ρβιψϊ δχιωεψ μαριρ δπϊεπιν
+                    //close connection -  Γ±Γ’Γ©ΓΈΓΊ Γ€Γ·Γ©ΓΉΓ₯ΓΈ Γ¬Γ‘Γ±Γ©Γ± Γ€Γ°ΓΊΓ₯Γ°Γ©Γ­
                     conn.Close();
                 }
             }
@@ -111,7 +105,7 @@ public class SQLHelper
                 {
                     //open connection with the DB
                     conn.Open();
-                    //execute the query (scalar) - αιφες δωΰιμϊΰ
+                    //execute the query (scalar) - Γ‘Γ©ΓΆΓ₯Γ² Γ€ΓΉΓ Γ©Γ¬ΓΊΓ 
                     scalar = comm.ExecuteScalar();
                 }
                 catch (Exception exp)
@@ -121,7 +115,7 @@ public class SQLHelper
                 }
                 finally
                 {
-                    //close connection -  ρβιψϊ δχιωεψ μαριρ δπϊεπιν
+                    //close connection -  Γ±Γ’Γ©ΓΈΓΊ Γ€Γ·Γ©ΓΉΓ₯ΓΈ Γ¬Γ‘Γ±Γ©Γ± Γ€Γ°ΓΊΓ₯Γ°Γ©Γ­
                     conn.Close();
                 }
             }
